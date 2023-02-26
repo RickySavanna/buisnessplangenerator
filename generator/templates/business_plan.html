@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genius Generator</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>Genius Plan Generator</h1>
+      </div>
+      <ul class="nav-links"></ul>
+    </nav>
+
+    {% if response %}
+    <section class="generated-plan">
+      <h2>Generated Business Plan:</h2>
+      <p>{{ response }}</p>
+    </section>
+    {% endif %}
+
+    <footer>
+      <p>&copy; 2023 Ricky Savanna</p>
+    </footer>
+  </body>
+</html>
